@@ -18,7 +18,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHasNothingEqual() {
         int input[] = {3, 4, 3, 2};
-        int value = 5;
+        int value = 6;
         int result = FindLoop.indexOf(input, value);
         int expect = 0;
         assertThat(result, is(expect));
