@@ -7,6 +7,9 @@ public class FindLoop {
             if (data[index] == el) {
                 rst = index;
                 break;
+            } else {
+                rst = -1;
+                break;
             }
         }
         return rst;
