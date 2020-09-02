@@ -6,7 +6,7 @@ public class Check {
         for (int i = 0; i < data.length; i++) {
             data[0] = true;
             if(data[i] = data[0]) {
-                return true;
+                return false;
             }
         }
         return result;
