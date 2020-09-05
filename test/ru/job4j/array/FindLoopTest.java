@@ -20,7 +20,7 @@ public class FindLoopTest {
         int input[] = {3, 4, 3, 2};
         int value = 6;
         int result = FindLoop.indexOf(input, value);
-        int expect = 0;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 }
