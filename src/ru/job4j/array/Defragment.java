@@ -7,15 +7,11 @@ public class Defragment {
         int notNullIndex = 0;
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                nullIndex = index; /* указатель на null ячейку. */
-                /* переместить первую не null ячейку. Нужен цикл. */
-            } else {
-                notNullIndex = index;
-            }
-            for (int i = 0; i < array.length; i++) {
-                int temp = nullIndex;
-                nullIndex = notNullIndex;
-                notNullIndex = temp;
+                for (int i = 0; i < array.length; i++) {
+                        int temp = nullIndex;
+                        nullIndex = notNullIndex;
+                        notNullIndex = temp;
+                }
             }
             System.out.print(array[index] + " ");
         }
